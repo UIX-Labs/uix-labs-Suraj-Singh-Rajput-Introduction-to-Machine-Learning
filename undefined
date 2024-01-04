@@ -1,0 +1,13 @@
+length = int(input())
+n = int(input())
+
+for _ in range(n):
+    w, h = map(int, input().split())
+    
+    if w < length or h < length:
+        print("UPLOAD ANOTHER")
+    elif w >= length or h >= length:
+        if w == h:
+            print("ACCEPTED")
+        else:
+            print("CROP IT")
